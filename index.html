@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Weather App</title>
+        <meta name="Weather App" content="This page gives the weather based on city">
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <h1>Search the Weather</h1>
+        </div>
+
+        <!--Coordinate Forms-->
+        <nav class = "coordinates">
+              <form class = "coordinate_forms">
+                <div id="latitude_form">
+                    <label for="latitude">Latitude:</label>
+                    <input class = "input" type="text" inputmode = "numeric" id="latitude" name="latitude" value="latitude"><br>
+                </div>
+                <div id="longitude_form">
+                    <label for="longitude">Longitude:</label>
+                    <input class = "input" type="text" inputmode = "numeric" id="longitude" name="longitude" value="longitude"><br><br>
+                </div>
+            </form> 
+        </nav>
+
+        <!--Get Weather Button-->
+        <div class="weather_button">
+            <button id="get_weather" type="button" class="button">Get Weather</button>
+        </div>
+
+        <!--Weather Card-->
+        <div class="weather_card"></div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
